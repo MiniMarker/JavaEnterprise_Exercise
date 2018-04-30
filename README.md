@@ -1,13 +1,7 @@
-# JavaEnterprise_Exam
-
-[![Build Status](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam.svg?token=63V1sLhHsu3poeGMykFw&branch=master)](https://travis-ci.com/MiniMarker/JavaEnterprise_Exam)
+# JavaEnterprise_Exercise
 
 * Student: Christian Marker
 * Subject: PG5100-1 18V Enterpriseprogrammering 1
-
-This repo contains my solution for our 48-hour home exam.
-
-Published on Heroku: [Here](https://lit-headland-29494.herokuapp.com/)
 
 **Project Structure**
 
@@ -22,6 +16,8 @@ The project contains 3 submodules
     * Selenium Tests
     * Application Runner
 * reports
+    * JaCoCo coverage
+    * OWASP check
 
 ## How to run code
 
@@ -30,7 +26,7 @@ The project contains 3 submodules
 <br/> ```mvn install``` will install and get reports **with** running tests
 <br/> ```mvn install -DskipTests``` will install and get reports **without** running tests
 3. Run **LocalApplicationRunner** located in ~/frontend/src/test/java/no/cmarker/frontend/LocalApplicationRunner.java
-4. Open ```localhost:8080/index.jsf``` in your browser
+4. Open ```localhost:8080/``` in your browser
 
 To generate code reports after install:
 ```mvn jacoco:report-aggregate```
