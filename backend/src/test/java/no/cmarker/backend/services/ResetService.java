@@ -1,6 +1,7 @@
 package no.cmarker.backend.services;
 
-import no.cmarker.backend.entities.Person;
+import no.cmarker.backend.entities.Dish;
+import no.cmarker.backend.entities.Menu;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,7 +22,8 @@ public class ResetService {
 
 	public void resetDatabase(){
 		
-		deleteEntity(Person.class);
+		deleteEntity(Menu.class);
+		deleteEntity(Dish.class);
 	}
 
 	private void deleteEntity(Class<?> entity){

@@ -25,25 +25,12 @@
 
 <body>
 
-
-    <sec:authenticated>
-
-        <p><h:outputText value="Hi! #{userInfoController.userName} "/></p>
-
-        <a id="logoutId" href="logout" class="btn">Log Out</a>
-
-    </sec:authenticated>
-
-
-    <sec:anonymous>
-        <p>You are not logged in</p>
-        <a id="linkToLoginId" href="login.xhtml" class="btn">Log In</a>
-        <a id="linkToSignupId" href="signup.xhtml" class="btn" >Sign Up</a>
-    </sec:anonymous>
-
-
+    <h4>MyCantina Application</h4>
     <hr/>
 
+    <a id="linkToHome" href="my_cantina.xhtml">Home</a>
+
+    <br/>
     <ui:insert name="content"/>
 
 </body>

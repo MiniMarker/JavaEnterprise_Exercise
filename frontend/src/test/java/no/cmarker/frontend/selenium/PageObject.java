@@ -16,7 +16,7 @@ public abstract class PageObject {
 	
 	private static final AtomicLong counter = new AtomicLong(System.currentTimeMillis());
 	
-	public static String getUniqueId() {
+	public String getUniqueDishName() {
 		return "foo" + counter.incrementAndGet();
 	}
 	

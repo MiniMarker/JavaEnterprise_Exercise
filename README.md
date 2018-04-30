@@ -27,7 +27,10 @@ The project contains 3 submodules
 
 1. Clone this repo
 2. Run from project root folder: 
-<br/> ```mvn install``` will install **with** running tests
-<br/> ```mvn install -DskipTests``` will install **without** running tests
+<br/> ```mvn install``` will install and get reports **with** running tests
+<br/> ```mvn install -DskipTests``` will install and get reports **without** running tests
 3. Run **LocalApplicationRunner** located in ~/frontend/src/test/java/no/cmarker/frontend/LocalApplicationRunner.java
 4. Open ```localhost:8080/index.jsf``` in your browser
+
+To generate code reports after install:
+```mvn jacoco:report-aggregate```

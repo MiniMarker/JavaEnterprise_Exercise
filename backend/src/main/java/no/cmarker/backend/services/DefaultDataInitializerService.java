@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import java.awt.*;
 import java.util.function.Supplier;
 
 /**
@@ -15,12 +16,19 @@ import java.util.function.Supplier;
 public class DefaultDataInitializerService {
 	
 	@Autowired
-	private PersonService personService;
+	private DishService dishService;
+	
+	@Autowired
+	private MenuService menuService;
 	
 	@PostConstruct
 	public void initialize(){
-		Integer id1 = attempt(() -> personService.createPerson("Ola"));
-		
+		/*
+		Long id1 = attempt(() -> dishService.createDish("Pizza", "Italian"));
+		Long id2 = attempt(() -> dishService.createDish("Soup", "Tomato"));
+		Long id3 = attempt(() -> dishService.createDish("Salad", "Ceasar"));
+		Long id4 = attempt(() -> dishService.createDish("Hot Dogs", "With cheese"));
+		*/
 	}
 	
 	private <T> T attempt(Supplier<T> lambda) {
